@@ -21,7 +21,7 @@ header img{
 header h1{
     float: left;
     
-    margin: 5px;
+    margin: 10px;
     font-size: 60px;
     color:#fff;
 }
@@ -58,10 +58,11 @@ nav .opcao:hover{
 }
 
 section{
-     clear: both;
+     
      min-height: 650px;
      width: 100%;
      margin-top: 0px;
+     float: right;
 }
 
 footer{
@@ -70,19 +71,85 @@ footer{
     text-align: center;
     padding: 10px;
 }
-section{
+
+section p{
+    
     clear: both;
-    min-height: 500px;
-    width: 100%;
-    margin-top: 0px;
+    text-align: center;
+    margin: 60px 80px;
+    float: right;
+    color: #fff;
+}
+
+
+section #titulos{
+    
+    float: right;
+    height: 300px;
+    width: 650px;
+    margin: 0px auto;
+    margin-right: 130px;
+}
+
+h2{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    font-size: 50px;
+    color: #fff;
+    margin-left: 60px;
 }
 
 .liberta{
-    height: 500px;
-    width: 450px;
-    margin: 25px;
-    background-color: #fff;
+    height: 400px;
+    width: 380px;
+    margin: 50px;
     border-radius: 60px;
+    margin-left: 100px;
 
+}
+
+.esquerda{
+    float:left;
+}
+
+.tabelaTitulos{
+    margin:10px auto;
+    text-align: center;
+    float: center;
+    color: #fff;
+    margin-right: 150px;
+    margin-top: 70px;
+}
+
+.nomeacaoTabela{
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    color: #fff;
+    padding: 5px;
+    border: transparent;
+}
+
+
+tr,th,td{
+    border: 1px solid #fff;
+    padding: 5px;
+    border-radius: 10px;
+
+}
+tr.td{ 
+    font-size: 14px;
+}
+tr:nth-child(even){
+    background-color: #333;
+}
+tr:nth-child(odd){
+    background-color: #333;
+}
+
+table{
+    float: center;
+    
 }
 
