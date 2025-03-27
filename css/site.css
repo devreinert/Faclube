@@ -20,7 +20,6 @@ header img{
 
 header h1{
     float: left;
-    
     margin: 10px;
     font-size: 60px;
     color:#fff;
@@ -70,8 +69,8 @@ footer{
     color: #fff;
     text-align: center;
     padding: 10px;
-}
 
+}
 section p{
     
     clear: both;
@@ -80,8 +79,6 @@ section p{
     color: #fff;
     
 }
-
-
 section #titulos{
     
     float: right;
@@ -89,19 +86,17 @@ section #titulos{
     width: 650px;
     margin: 0px auto;
     margin-right: 130px;
-    
-    
+        
 }
-
 h2{
     text-align: center;
     margin-top: 20px;
     margin-bottom: 10px;
-    font-size: 50px;
+    font-size: 40px;
     color: #fff;
     margin-left: 60px;
-}
 
+}
 .liberta{
     height: 400px;
     width: 380px;
@@ -110,11 +105,10 @@ h2{
     margin-left: 100px;
 
 }
-
 .esquerda{
     float:left;
-}
 
+}
 .tabelaTitulos{
     margin:10px auto;
     text-align: center;
@@ -122,8 +116,8 @@ h2{
     color: #fff;
     margin-right: 250px;
     margin-top: 70px;
-}
 
+}
 .nomeacaoTabela{
     text-align: center;
     font-size: 30px;
@@ -131,9 +125,8 @@ h2{
     color: #fff;
     padding: 5px;
     border: transparent;
+
 }
-
-
 tr,th,td{
     border: 1px solid #fff;
     padding: 5px;
@@ -142,31 +135,34 @@ tr,th,td{
 }
 tr.td{ 
     font-size: 14px;
+
 }
 tr:nth-child(even){
     background-color: #333;
+
 }
 tr:nth-child(odd){
     background-color: #333;
+
 }
 
 table{
     float: center;
+
     
 }
-
 .imagem{
     height: 400px;
     width: 320px;
     margin: 50px;
     margin-left: 100px;
-}
 
+}
 .gigante{
     float: left;
     margin-left: 200px;
-}
 
+}
 .cadastro{
     width: 300px;
     margin: 0px auto;
@@ -176,20 +172,19 @@ table{
     border-radius: 10px;
    
 }
-
 .cadastro input, .cadastro textarea, .cadastro select{
     margin: 5px auto;
     width: 100%;
     padding: 5px 0;
     border-radius: 10px;
-}
 
+}
 .cadastro textArea{
     height: 100px;
     resize: none;
     border-radius: 10px;
-}
 
+}
 .cadastro button{
     width: 30%;
     margin: 0 10%;
@@ -198,6 +193,3 @@ table{
     font-size: 16px;
     border-radius: 10px;
 }
-
-
-
