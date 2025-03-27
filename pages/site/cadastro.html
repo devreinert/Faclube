@@ -22,7 +22,34 @@
 
     </nav>
 	<section>
-
+		<h2>Fale Conosco</h2>
+		<form name="frmfaleconosco" method="post" action="#">
+		
+		<form name="frmCadastro" method="post" action="#">
+			<fieldset class="cadastro">
+				<legend>Dados pessoais:</legend>
+					<label for="nome">Nome: </label>
+					<input type="text" name="txtname" id="nome">
+					<label for="telefone">Telefone: </label>
+					<input type="text" name="txtname" id="fone">
+					<label for="email">E-mail: </label>
+					<input type="email" name="txtemail" id="email">
+				
+			</fieldset>
+			<fieldset class="cadastro">
+				<legend>Informar descontos?</legend>
+				<label for="opcaoSimNao">Escolha: </label>
+				<select name="selOpcaoSimNao" id="SimNao">
+					<option value="">Escolha</option>
+					<option value="SI">Sim</option>
+					<option value="NO">Não</option>
+				</select>
+				<label for="comentario">Comentário: </label>
+				<textarea name="txacomentario" id="comentario"></textarea>
+				<button type="reset">Limpar</button><button type="submit">Enviar</button>
+			</fieldset>
+		</form>
+		
     </section>
 	<footer>Copyright &copy; Escola Sistêmica 2019</footer>
 </body>
