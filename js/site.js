@@ -19,5 +19,11 @@ function validaFaleConosco(){
         document.frmCadastro.CheckMasc.focus();
         return false;
     }
+    if(document.comentario.txtcomentario.value=""){
+        alert("Preencha o motivo. ");
+        document.comentario.txtcadastro.focus();
+        return false;
+    }
     return true;
 }
+

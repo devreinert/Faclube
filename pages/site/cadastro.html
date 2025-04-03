@@ -48,13 +48,13 @@
 			<fieldset class="cadastro">
 				<legend>Informar descontos?</legend>
 				<label for="opcaoSimNao">Escolha: </label>
-				<select name="selOpcaoSimNao" id="SimNao">
+				<select name="selOpcaoSimNao" id="SimNao" onchange="verificaMotivo(this.value)">
 					<option value="">Escolha</option>
 					<option value="SI">Sim</option>
 					<option value="NO">Não</option>
 				</select>
 				<label for="comentario">Comentário: </label>
-				<textarea name="txacomentario" id="comentario"></textarea>
+				<textarea name="txtcomentario" id="comentario"></textarea>
 				<button type="reset">Limpar</button><button type="submit">Enviar</button>
 			</fieldset>
 		</form>
