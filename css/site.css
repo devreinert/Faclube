@@ -32,11 +32,13 @@ nav{
     height: 10px;
     color: #fff;
     text-align: center;
+    
 }
 
 nav a{
     text-decoration: none;
     text-align: center;
+    
 }
 
 nav .opcao{
@@ -50,10 +52,12 @@ nav .opcao{
         border-radius: 10px;
         text-align: center;
         text-decoration: none;
+        
 }
 
 nav .opcao:hover{
     background-color: #333;  
+    transition: 0.5s;
 }
 
 section{
@@ -149,14 +153,15 @@ tr:nth-child(odd){
 table{
     float: center;
 
-    
 }
+
 .imagem{
     height: 400px;
     width: 320px;
     margin: 50px;
     margin-left: 100px;
-
+    
+    
 }
 .gigante{
     float: left;
@@ -192,4 +197,9 @@ table{
     font-weight: bold;
     font-size: 16px;
     border-radius: 10px;
+}
+.flex-container{
+    display: flex;
+    justify-content: space-around;
+    
 }

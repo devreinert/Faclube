@@ -8,6 +8,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Vasco da Gama</title>
 	<link rel="stylesheet" type="text/css" href="../../css/site.css">
+	<script src="../../js/site.js"></script>
 </head>
 <body>
 	<header> 
@@ -23,17 +24,25 @@
     </nav>
 	<section>
 		<h2 class="cadastro" >Fale Conosco </h2>
-		<form name="frmfaleconosco" method="post" action="#">
-		
-		<form name="frmCadastro" method="post" action="#">
+		<form name="frmCadastro" method="get" action="#" onsubmit="return validaFaleConosco()" >
 			<fieldset class="cadastro">
 				<legend>Dados pessoais:</legend>
 					<label for="nome">Nome: </label>
 					<input type="text" name="txtname" id="nome">
 					<label for="telefone">Telefone: </label>
-					<input type="text" name="txtname" id="fone">
+					<input type="text" name="txtfone" id="fone">
 					<label for="email">E-mail: </label>
 					<input type="email" name="txtemail" id="email">
+					<div>
+						<label for="">Sexo:</label>
+						<div class="flex-container">
+								<input type="radio" id="CheckSim" name="CheckMasc">
+								<label for="horns">Masculino</label>
+						
+								<input type="radio" id="CheckSim" name="CheckMasc">
+								<label for="horns">Feminino</label>
+						</div>
+					</div>
 				
 			</fieldset>
 			<fieldset class="cadastro">
