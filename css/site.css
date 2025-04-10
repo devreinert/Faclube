@@ -203,3 +203,7 @@ table{
     justify-content: space-around;
     
 }
+.radio-group{
+    display: inline;
+    justify-content: space-around;
+}

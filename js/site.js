@@ -1,11 +1,18 @@
 function validaFaleConosco(){
-    if(document.frmCadastro.txtname.value==""){
-        alert("Preencha o campo Nome. ");
+    var nome = document.frmCadastro.txtname.value;
+    var expRegNome = new RegExp("^[A-zÀ-ü]{3,}([ ]{1}[A-zÀ-ü]{2,})+$");
+
+    if(!expRegNome.test(nome)){
+        alert("Preencha o campo Nome corretamente");
         document.frmCadastro.txtname.focus();
         return false;
     }
-    if(document.frmCadastro.txtfone.value==""){
-        alert("Preencha o campo Telefone. ");
+    
+    var fone = document.frmCadastro.txtfone.value;
+    var expRegFone = new RegExp("^[(]{1}[1-9]{2}[)]{1}[0-9]{4,5}[-]{1}[0-9]{4}$");
+    
+    if(!expRegFone.test(fone)){
+        alert("Preencha o campo Telefone corretamente");
         document.frmCadastro.txtfone.focus();
         return false;
     }
@@ -19,11 +26,19 @@ function validaFaleConosco(){
         document.frmCadastro.CheckMasc.focus();
         return false;
     }
-    if(document.frmCadastro.selMotivo.value==""){
+
+    if (document.getElementById("desejo").checked){
+        alert("Seleciona po");
+        return false;
+    } 
+    
+    if(document.frmCadastro.txtcomentario.value==""){
         alert("Preencha o motivo. ");
-        document.frmCadastro.selMotivo.focus();
+        document.frmCadastro.txtcomentario.focus();
         return false;
     }
+
+    
     return true;
 }
 
