@@ -16,11 +16,15 @@ function validaFaleConosco(){
         document.frmCadastro.txtfone.focus();
         return false;
     }
-    if(document.frmCadastro.txtemail.value==""){
-        alert("Preencha o campo E-mail. ");
+    var email = document.frmCadastro.txtemail.value;
+    var expRegEmail = new RegExp("^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$");
+
+    if(!expRegEmail.test(email)){
+        alert("Preencha o campo E-mail");
         document.frmCadastro.txtemail.focus();
         return false;
     }
+    
     if(document.frmCadastro.CheckMasc.value==""){
         alert("Informe seu sexo. ");
         document.frmCadastro.CheckMasc.focus();
@@ -31,12 +35,18 @@ function validaFaleConosco(){
         alert("Seleciona po");
         return false;
     } 
+
+    if(!document.frmCadastro.desejo.checked){
+        alert("Marque a opção do fã-clube");
+        return false;
+    }
     
     if(document.frmCadastro.txtcomentario.value==""){
         alert("Preencha o motivo. ");
         document.frmCadastro.txtcomentario.focus();
         return false;
     }
+    
 
     
     return true;
