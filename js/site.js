@@ -31,18 +31,23 @@ function validaFaleConosco(){
         return false;
     }
 
-    if (document.getElementById("desejo").checked){
-        alert("Seleciona po");
-        return false;
-    } 
-
     if(!document.frmCadastro.desejo.checked){
         alert("Marque a opção do fã-clube");
         return false;
     }
+    if(document.frmCadastro.selMotivo.value==""){
+        alert("Faça uma escolha. ");
+        document.frmCadastro.selMotivo.focus();
+        return false;
+    }
+    if(document.frmCadastro.selProduto.value==""){
+        alert("Escolha uma opção. ");
+        document.frmCadastro.selProduto.focus();
+        return false;
+    }
     
     if(document.frmCadastro.txtcomentario.value==""){
-        alert("Preencha o motivo. ");
+        alert("Faça um comentário. ");
         document.frmCadastro.txtcomentario.focus();
         return false;
     }
@@ -60,7 +65,7 @@ function verificaMotivo(motivo){
         
         var select = document.createElement("select");
        
-        select.setAttribute("name", "selMotivo");
+        select.setAttribute("name", "selProduto");
         var option = document.createElement("option");
         option.setAttribute("value", "");
         var texto = document.createTextNode("Escolha");

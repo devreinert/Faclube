@@ -203,6 +203,12 @@ table{
     justify-content: space-around;
     
 }
+
+.cadastro input[type="checkbox"]{
+width: auto;
+margin-right: 5px;
+
+}
 .radio-group{
     display: inline;
     justify-content: space-around;
